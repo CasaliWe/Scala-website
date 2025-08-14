@@ -19,10 +19,10 @@
 
     <!-- navegação mob -->
     <nav class="d-flex flex-column mt-4 px-4">
-        <a href="<?= $base_url; ?>index.php" class="<?= \Core\RoutesSite::isActive('/') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Início</a>
-        <a href="<?= $base_url; ?>empresa.php" class="<?= \Core\RoutesSite::isActive('/empresa') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Empresa</a>
-        <a href="#" class="<?= \Core\RoutesSite::isActive('/servico') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Serviços</a>
-        <a href="<?= $base_url; ?>contato.php" class="<?= \Core\RoutesSite::isActive('/contato') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Contato</a>
+        <a href="<?= $base_url; ?>index.php" class="<?= \Core\RoutesSite::isActive('/index.php') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Início</a>
+        <a href="<?= $base_url; ?>empresa.php" class="<?= \Core\RoutesSite::isActive('/empresa.php') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Empresa</a>
+        <a href="#" class="<?= \Core\RoutesSite::isActive('/servico.php') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Serviços</a>
+        <a href="<?= $base_url; ?>contato.php" class="<?= \Core\RoutesSite::isActive('/contato.php') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Contato</a>
     </nav>
     
     <div class="bg-1 py-4 w-100 px-4 d-flex align-items-center justify-content-between">
@@ -48,10 +48,10 @@
         <!-- nav desktop -->
         <div class="d-flex align-items-center" id="nav-desktop">
             <nav class="d-flex me-5">
-                <a href="<?= $base_url; ?>index.php" class="<?= \Core\RoutesSite::isActive('/') ? 'active-link' : '' ?> font-link-nav text-white">Início</a>
-                <a href="<?= $base_url; ?>empresa.php" class="<?= \Core\RoutesSite::isActive('empresa') ? 'active-link' : '' ?> font-link-nav text-white">Empresa</a>
-                <a href="#" class="<?= \Core\RoutesSite::isActive('servico') ? 'active-link' : '' ?> font-link-nav text-white">Serviços</a>
-                <a href="<?= $base_url; ?>contato.php" class="<?= \Core\RoutesSite::isActive('contato') ? 'active-link' : '' ?> font-link-nav text-white">Contato</a>
+                <a href="<?= $base_url; ?>index.php" class="<?= \Core\RoutesSite::isActive('/index.php') ? 'active-link' : '' ?> font-link-nav text-white">Início</a>
+                <a href="<?= $base_url; ?>empresa.php" class="<?= \Core\RoutesSite::isActive('/empresa.php') ? 'active-link' : '' ?> font-link-nav text-white">Empresa</a>
+                <a href="#" class="<?= \Core\RoutesSite::isActive('/servico.php') ? 'active-link' : '' ?> font-link-nav text-white">Serviços</a>
+                <a href="<?= $base_url; ?>contato.php" class="<?= \Core\RoutesSite::isActive('/contato.php') ? 'active-link' : '' ?> font-link-nav text-white">Contato</a>
             </nav>
             <div class="d-flex">
                 <a href="<?= $base_url; ?>fale-conosco.php" class="font-link-nav-btn me-3 bg-white text-dark py-2 px-4 rounded">Fale Conosco</a>

@@ -48,3 +48,7 @@ a:hover{
 .rounded{
     border-radius: 15px !important;
 }
+
+.border-top-site{
+    border-top: 2px solid #31C5FF !important;
+}
