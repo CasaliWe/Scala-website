@@ -7,7 +7,7 @@ function menu(){
         document.getElementById("menu-mobile").style.cssText = 'height: 0vh; transition: all 0.2s ease;';
         aberto = false;
     }else{
-        document.getElementById("menu-mobile").style.cssText = 'height: 100vh; transition: all 0.2s ease;';
+        document.getElementById("menu-mobile").style.cssText = 'height: 75vh; transition: all 0.2s ease;';
         aberto = true;
     }
 }

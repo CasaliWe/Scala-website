@@ -25,7 +25,7 @@
             <img <?= $anima_scroll; ?> style="width: 100px;" src='<?= $base_url ?>assets/imagens/site/logo-vamos-conversar.png'>
             <h2 <?= $anima_scroll; ?> class="text-0 fw-semibold mb-2 mt-4">Vamos conversar</h2>
             <p <?= $anima_scroll; ?> class="text-0 mb-5">Fale com a equipe da Scala e encontre a melhor solução para seu perfil ou negócio.</p>
-            <a <?= $anima_scroll; ?> href="<?= $base_url; ?>contato.php" class="rounded bg-1 text-0 py-3 px-5 fw-semibold">Entre em contato</a>
+            <a <?= $anima_scroll; ?> href="<?= $base_url; ?>fale-conosco.php" class="rounded bg-1 text-0 py-3 px-5 fw-semibold">Entre em contato</a>
         </div>
 
     </div>

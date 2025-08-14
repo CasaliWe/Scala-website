@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="text-center border-top pt-4 mt-4">
+        <div class="text-center border-top pt-4 mt-4 px-5 px-lg-0">
             <span class="text-white small"><?= date('Y'); ?> © Scala - Todos os direitos reservados.</span>
         </div>
     </div>
