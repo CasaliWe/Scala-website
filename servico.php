@@ -23,10 +23,18 @@
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
 
-    <!-- VAMOS CONVERSAR -->
-    <?php include_once  __DIR__ .'/modulos/vamos-conversar/index.php'; ?>
-    <!-- VAMOS CONVERSAR -->
-     
+    <!-- BANNER SERVICO -->
+    <?php include_once  __DIR__ .'/modulos/banner-servico/index.php'; ?>
+    <!-- BANNER SERVICO -->
+
+    <!-- CONTENT SERVICO -->
+    <?php include_once  __DIR__ .'/modulos/content-servico/index.php'; ?>
+    <!-- CONTENT SERVICO -->
+
+    <!-- CTA SERVICO -->
+    <?php include_once  __DIR__ .'/modulos/cta-servico/index.php'; ?>
+    <!-- CTA SERVICO -->
+
     <!-- FOOTER -->
     <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
     <!-- FOOTER -->

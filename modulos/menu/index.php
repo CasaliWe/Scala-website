@@ -21,7 +21,14 @@
     <nav class="d-flex flex-column mt-4 px-4">
         <a href="<?= $base_url; ?>index.php" class="<?= \Core\RoutesSite::isActive('/index.php') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Início</a>
         <a href="<?= $base_url; ?>empresa.php" class="<?= \Core\RoutesSite::isActive('/empresa.php') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Empresa</a>
-        <a href="#" class="<?= \Core\RoutesSite::isActive('/servico.php') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Serviços</a>
+        <div class="dropdown-servicos-mobile mb-5">
+            <a href="#" class="<?= \Core\RoutesSite::isActive('/servico.php') ? 'active-link' : '' ?> fs-3 text-white d-flex align-items-center dropdown-toggle" onclick="toggleMobileDropdown(event)">
+                Serviços
+            </a>
+            <div class="dropdown-menu-mobile">
+                <a href="<?= $base_url; ?>servico.php?id=1" style="color: white !important;" class="fs-4 text-1 mb-3 d-block">Para sua empresa</a>
+            </div>
+        </div>
         <a href="<?= $base_url; ?>contato.php" class="<?= \Core\RoutesSite::isActive('/contato.php') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Contato</a>
     </nav>
     
@@ -50,7 +57,14 @@
             <nav class="d-flex me-5">
                 <a href="<?= $base_url; ?>index.php" class="<?= \Core\RoutesSite::isActive('/index.php') ? 'active-link' : '' ?> font-link-nav text-white">Início</a>
                 <a href="<?= $base_url; ?>empresa.php" class="<?= \Core\RoutesSite::isActive('/empresa.php') ? 'active-link' : '' ?> font-link-nav text-white">Empresa</a>
-                <a href="#" class="<?= \Core\RoutesSite::isActive('/servico.php') ? 'active-link' : '' ?> font-link-nav text-white">Serviços</a>
+                <div class="dropdown-servicos">
+                    <a href="#" class="<?= \Core\RoutesSite::isActive('/servico.php') ? 'active-link' : '' ?> font-link-nav text-white d-flex align-items-center dropdown-toggle">
+                        Serviços
+                    </a>
+                    <div class="dropdown-menu bg-0">
+                        <a href="<?= $base_url; ?>servico.php?id=1" class="dropdown-item">Para sua empresa</a>
+                    </div>
+                </div>
                 <a href="<?= $base_url; ?>contato.php" class="<?= \Core\RoutesSite::isActive('/contato.php') ? 'active-link' : '' ?> font-link-nav text-white">Contato</a>
             </nav>
             <div class="d-flex">
