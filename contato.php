@@ -23,6 +23,10 @@
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
 
+    <!-- CONTATO -->
+    <?php include_once  __DIR__ .'/modulos/content-contato/index.php'; ?>
+    <!-- CONTATO -->
+
     <!-- FOOTER -->
     <?php include_once  __DIR__ .'/modulos/footer/index.php'; ?>
     <!-- FOOTER -->

@@ -23,6 +23,10 @@
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
 
+    <!-- FALE CONOSCO -->
+    <?php include_once  __DIR__ .'/modulos/fale-conosco/index.php'; ?>
+    <!-- FALE CONOSCO -->
+
     <!-- VAMOS CONVERSAR -->
     <?php include_once  __DIR__ .'/modulos/vamos-conversar/index.php'; ?>
     <!-- VAMOS CONVERSAR -->

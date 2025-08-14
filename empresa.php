@@ -23,6 +23,18 @@
     <?php include_once  __DIR__ .'/modulos/menu/index.php'; ?>
     <!-- MENU -->
 
+    <!-- BANNER EMPRESA -->
+    <?php include_once  __DIR__ .'/modulos/banner-empresa/index.php'; ?>
+    <!-- BANNER EMPRESA -->
+
+    <!-- CONTENT EMPRESA -->
+    <?php include_once  __DIR__ .'/modulos/content-empresa/index.php'; ?>
+    <!-- CONTENT EMPRESA -->
+
+    <!-- MISSÃO -->
+    <?php include_once  __DIR__ .'/modulos/missao-visao-valores/index.php'; ?>
+    <!-- MISSÃO -->
+
     <!-- VAMOS CONVERSAR -->
     <?php include_once  __DIR__ .'/modulos/vamos-conversar/index.php'; ?>
     <!-- VAMOS CONVERSAR -->
