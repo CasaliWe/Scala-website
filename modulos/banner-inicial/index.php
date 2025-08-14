@@ -59,8 +59,8 @@
 
 <section id="banner-inicial" class="d-flex align-items-end align-items-lg-center justify-content-center">
     <div class="container mx-auto px-4 px-lg-0 mb-5 mb-lg-0 pb-4 pb-lg-0">
-        <h1 class="mb-3 mb-lg-4 text-white" id="title-banner-inicial">Segurança para transformar seu capital em oportunidades.</h1>
-        <a id="btn-conheca-scala" href="<?= $base_url; ?>empresa.php" class="bg-1 fw-semibold text-0 rounded px-4 py-2"><span class="me-2">Conheça a Scala </span><img style="width: 20px; margin-top: -3px;" src='<?= $base_url ?>assets/imagens/site/arrow-right.png'></a>
+        <h1 <?= $anima_scroll; ?> class="mb-3 mb-lg-4 text-white" id="title-banner-inicial">Segurança para transformar seu capital em oportunidades.</h1>
+        <a <?= $anima_scroll; ?> id="btn-conheca-scala" href="<?= $base_url; ?>empresa.php" class="bg-1 fw-semibold text-0 rounded px-4 py-2"><span class="me-2">Conheça a Scala </span><img style="width: 20px; margin-top: -3px;" src='<?= $base_url ?>assets/imagens/site/arrow-right.png'></a>
     </div>
 </section>
 

@@ -35,11 +35,14 @@
 
 
 <section class="py-5 bg-2">
-    <div class="container mx-auto py-5 pb-md-2">
-        <h4 class="text-center mb-2 text-1">A Scala</h4>
-        <h2 class="text-center text-white mb-5 pb-4 display-3 fw-bold">SOLUÇÕES FINANCEIRAS</h2>
 
-        <div class="swiper">
+    <h1 class="d-none">Nossas soluções</h1>
+
+    <div class="container mx-auto py-5 pb-md-2">
+        <h4 <?= $anima_scroll; ?> class="text-center mb-2 text-1">A Scala</h4>
+        <h2 <?= $anima_scroll; ?> class="text-center text-white mb-5 pb-4 display-3 fw-bold">SOLUÇÕES FINANCEIRAS</h2>
+
+        <div <?= $anima_scroll; ?> class="swiper">
             <div class="swiper-wrapper">
 
                     <div class="swiper-slide">

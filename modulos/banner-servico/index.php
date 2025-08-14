@@ -41,7 +41,7 @@
 
 <section id="banner-servico" class="d-flex align-items-end align-items-lg-center justify-content-center">
     <div class="container mx-auto px-4 px-lg-0 mb-5 mb-lg-0 pb-4 pb-lg-0">
-        <h1 class="mb-3 mb-lg-4 text-white" id="title-banner-servico">Antecipe capital. Potencialize seu negócio.</h1>
+        <h1 <?= $anima_scroll; ?> class="mb-3 mb-lg-4 text-white" id="title-banner-servico">Antecipe capital. Potencialize seu negócio.</h1>
     </div>
 </section>
 

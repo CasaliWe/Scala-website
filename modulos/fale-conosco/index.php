@@ -11,24 +11,27 @@
 </style>
 
 <section class="py-5">
+
+    <h1 class="d-none">Fale Conosco</h1>
+
     <div class="container mx-auto py-5 mt-5">
         <div id="container-content-fale-conosco" class="mx-lg-auto mt-0 pt-0 mt-lg-3 pt-lg-3 row px-4 px-lg-0">
 
             <div class="mb-4 mb-lg-0 col-12 col-lg-5">
-                <img src='<?= $base_url ?>assets/imagens/site/icone-scala.png' style="width: 45px;">
-                <h2 class="text-0 fw-bold mt-3 mb-2">Cadastre a sua <br> empresa na Scala <br> Securitizadora</h2>
-                <p class="text-secondary">Preencha o formulário e nossa equipe entrará em contato para entender o perfil da sua empresa e oferecer a melhor solução financeira.</p>
+                <img <?= $anima_scroll; ?> src='<?= $base_url ?>assets/imagens/site/icone-scala.png' style="width: 45px;">
+                <h2 <?= $anima_scroll; ?> class="text-0 fw-bold mt-3 mb-2">Cadastre a sua <br> empresa na Scala <br> Securitizadora</h2>
+                <p <?= $anima_scroll; ?> class="text-secondary">Preencha o formulário e nossa equipe entrará em contato para entender o perfil da sua empresa e oferecer a melhor solução financeira.</p>
             </div>
 
             <div class="col-12 col-lg-7">
                 <form action="<?= $base_url; ?>modulos/fale-conosco/php/enviar-email.php" onsubmit="loading()" method="post">
-                    <input type="text" name="nome" required class="rounded border-site mb-3 px-4 py-3 w-100" placeholder="Seu Nome*">
-                    <input type="tel" name="telefone" id="telefone" inputmode="tel" maxlength="16" required class="rounded border-site mb-3 px-4 py-3 w-100" placeholder="Seu telefone (DDD+Número)*">
-                    <input type="email" name="email" required class="rounded border-site mb-3 px-4 py-3 w-100" placeholder="Seu E-mail*">
-                    <input type="tel" name="cnpj" id="cnpj" required class="rounded border-site mb-3 px-4 py-3 w-100" placeholder="CNPJ da Empresa*">
-                    <input type="text" name="faturamento" required class="rounded border-site mb-5 px-4 py-3 w-100" placeholder="Faturamento dos últimos 12 meses em R$*">
+                    <input <?= $anima_scroll; ?> type="text" name="nome" required class="rounded border-site mb-3 px-4 py-3 w-100" placeholder="Seu Nome*">
+                    <input <?= $anima_scroll; ?> type="tel" name="telefone" id="telefone" inputmode="tel" maxlength="16" required class="rounded border-site mb-3 px-4 py-3 w-100" placeholder="Seu telefone (DDD+Número)*">
+                    <input <?= $anima_scroll; ?> type="email" name="email" required class="rounded border-site mb-3 px-4 py-3 w-100" placeholder="Seu E-mail*">
+                    <input <?= $anima_scroll; ?> type="tel" name="cnpj" id="cnpj" required class="rounded border-site mb-3 px-4 py-3 w-100" placeholder="CNPJ da Empresa*">
+                    <input <?= $anima_scroll; ?> type="text" name="faturamento" required class="rounded border-site mb-5 px-4 py-3 w-100" placeholder="Faturamento dos últimos 12 meses em R$*">
 
-                    <button type="submit" style="border: none;" class="bg-1 text-0 py-3 px-5 rounded"><span class="me-2">Cadastrar</span> <img style="width: 20px; margin-top: -3px !important;" src='<?= $base_url ?>assets/imagens/site/arrow-right.png'></button>
+                    <button <?= $anima_scroll; ?> type="submit" style="border: none;" class="bg-1 text-0 py-3 px-5 rounded"><span class="me-2">Cadastrar</span> <img style="width: 20px; margin-top: -3px !important;" src='<?= $base_url ?>assets/imagens/site/arrow-right.png'></button>
                 </form>
             </div>
 
