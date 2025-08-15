@@ -4,14 +4,9 @@
    //verifica auth;
    include_once './helpers/verifica-auth.php';
 
-    // pegando content
-    use Repositories\TextosEmpresaRepository;
-    $allContent = TextosEmpresaRepository::getAll();
-    $textoContent = $allContent['content_empresa'];
-    $missao = $allContent['missao'];
-    $visao = $allContent['visao'];
-    $valores = $allContent['valores'];
-    $compromisso = $allContent['compromisso'];
+   // pegando serviços
+   use Repositories\ServicosRepository;
+   $servicos = ServicosRepository::getAll();
 ?>
 
 <!DOCTYPE html>
@@ -38,13 +33,17 @@
         <h5 id="titulo-content-pagina" class="fw-semibold"><?= \Core\RoutesAdmin::getPageTitle(); ?></h5>
 
         <!-- módulo content página -->
-        <?php include_once 'modulos-admin/contents/textos-empresa/index.php';?>
+        <?php include_once 'modulos-admin/contents/servicos/index.php';?>
         <!-- módulo content página -->
     </main>
     <!-- CONTENT -->
 
     <!-- MODAL AVISOS -->
      <?php include_once "modulos-admin/modal-aviso/index.php"; ?>
+    <!-- MODAL AVISOS -->
+
+    <!-- MODAL AVISOS -->
+     <?php include_once "modulos-admin/contents/servicos/modais/add-servico.php"; ?>
     <!-- MODAL AVISOS -->
 
     <!-- SWIPER JS -->

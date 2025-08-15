@@ -3,5 +3,6 @@
     <a href="banners.php" class="link-nav-desktop <?= \Core\RoutesAdmin::isActive('banners') ?>">Banners</a>
     <a href="solucoes.php" class="link-nav-desktop <?= \Core\RoutesAdmin::isActive('solucoes') ?>">Soluções</a>
     <a href="textos-empresa.php" class="link-nav-desktop <?= \Core\RoutesAdmin::isActive('textos-empresa') ?>">Textos página Empresa</a>
+    <a href="servicos.php" class="link-nav-desktop <?= \Core\RoutesAdmin::isActive('Serviços') ?>">Serviços</a>
     <a class="link-nav-desktop"><?php include __DIR__ . "/../../btn-logout/index.php"; ?></a>
 </nav>
