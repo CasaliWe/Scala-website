@@ -15,12 +15,12 @@
             <!-- ref inserido pelo js -->
 
             <div class="mb-4">
-                <label for="desktop-banner">Desktop* (1920x1080 - Máx 2mb)</label>
+                <label for="desktop-banner">Desktop* (1920x1080 - Máx 5mb)</label>
                 <input type="file" id="desktop-banner" name="desktop" required class="form-control">
             </div>
 
             <div class="mb-4">
-                <label for="mobile-banner">Mobile* (400x700 - Máx 2mb)</label>
+                <label for="mobile-banner">Mobile* (400x700 - Máx 5mb)</label>
                 <input type="file" id="mobile-banner" name="mobile" required class="form-control">
             </div>
           </div>
@@ -32,3 +32,44 @@
     </div>
   </div>
 </div>
+
+
+<script>
+  // Validação de arquivo para desktop
+  document.getElementById('desktop-banner').addEventListener('change', function(e) {
+    validarArquivo(e.target, 'desktop');
+  });
+  
+  // Validação de arquivo para mobile
+  document.getElementById('mobile-banner').addEventListener('change', function(e) {
+    validarArquivo(e.target, 'mobile');
+  });
+  
+  function validarArquivo(input, tipo) {
+    const arquivo = input.files[0];
+    
+    if (!arquivo) return;
+    
+    // Verificar formato do arquivo
+    const formatosPermitidos = ['image/png', 'image/jpeg', 'image/jpg'];
+    const extensoesPermitidas = ['.png', '.jpg', '.jpeg'];
+    
+    const nomeArquivo = arquivo.name.toLowerCase();
+    const extensaoValida = extensoesPermitidas.some(ext => nomeArquivo.endsWith(ext));
+    
+    if (!formatosPermitidos.includes(arquivo.type) || !extensaoValida) {
+      alert('Formato de arquivo não permitido. Apenas PNG, JPEG e JPG são aceitos.');
+      input.value = '';
+      return;
+    }
+    
+    // Verificar tamanho do arquivo (5MB = 5 * 1024 * 1024 bytes)
+    const tamanhoMaximo = 5 * 1024 * 1024;
+    
+    if (arquivo.size > tamanhoMaximo) {
+      alert('Arquivo muito grande. O tamanho máximo permitido é 5MB.');
+      input.value = '';
+      return;
+    }
+  }
+</script>

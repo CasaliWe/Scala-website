@@ -1,0 +1,1 @@
+// Funções JavaScript para o módulo Textos página Empresa

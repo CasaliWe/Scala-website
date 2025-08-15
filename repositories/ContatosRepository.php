@@ -16,11 +16,8 @@ class ContatosRepository {
         try {
             $updated = Contatos::where('idcontatos', '1')->update([
                 'instagram' => $data['instagram'],
-                '_instagram' => $data['@_instagram'],
-                'facebook' => $data['facebook'],
-                '_facebook' => $data['@_facebook'],
                 'linkedin' => $data['linkedin'],
-                '_linkedin' => $data['@_linkedin'],
+                'area_cliente' => $data['area_cliente'],
                 'email' => $data['email'],
                 'telefone' => $data['telefone'],
                 'wpp' => $data['wpp']

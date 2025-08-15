@@ -8,7 +8,8 @@ class Banners extends Model {
     protected $table = 'banners';
     protected $fillable = [
         'banner_home_desktop', 
-        'banner_home_mobile'
+        'banner_home_mobile',
+        'title_banner_home'
     ];
     public $timestamps = false;
 }

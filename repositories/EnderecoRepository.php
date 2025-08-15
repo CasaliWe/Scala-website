@@ -21,6 +21,7 @@ class EnderecoRepository {
                     'estado' => $data['estado'],
                     'cep' => $data['cep'],
                     'pais' => $data['pais'],
+                    'maps' => $data['maps'],
                     'link_maps' => $data['link_maps']
                 ]);
         

@@ -13,6 +13,7 @@ class Endereco extends Model {
         'bairro',
         'cep',
         'pais',
+        'maps',
         'link_maps'
     ];
     public $timestamps = false;

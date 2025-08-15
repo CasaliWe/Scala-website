@@ -21,28 +21,13 @@
     </div>
 
     <div class="mb-4 col-12 col-lg-6">
-        <label for="@_instagram" class="small">@ do instagram*</label>
-        <input class="form-control" value="<?= $contatos->_instagram; ?>" type="text" required name="@_instagram" id="@_instagram">
-    </div>
-
-    <div class="mb-4 col-12 col-lg-6">
-        <label for="facebook" class="small">Facebook*</label>
-        <input class="form-control" value="<?= $contatos->facebook; ?>" type="text" required name="facebook" id="facebook">
-    </div>
-
-    <div class="mb-4 col-12 col-lg-6">
-        <label for="@_facebook" class="small">@ do facebook*</label>
-        <input class="form-control" value="<?= $contatos->_facebook; ?>" type="text" required name="@_facebook" id="@_facebook">
-    </div>
-
-    <div class="mb-4 col-12 col-lg-6">
         <label for="linkedin" class="small">LinkedIn*</label>
         <input class="form-control" type="text" value="<?= $contatos->linkedin; ?>" required name="linkedin" id="linkedin">
     </div>
 
     <div class="mb-4 col-12 col-lg-6">
-        <label for="@_linkedin" class="small">@ do LinkedIn*</label>
-        <input class="form-control" type="text" value="<?= $contatos->_linkedin; ?>" required name="@_linkedin" id="@_linkedin">
+        <label for="area_cliente" class="small">Link Área Cliente*</label>
+        <input class="form-control" value="<?= $contatos->area_cliente; ?>" type="text" required name="area_cliente" id="area_cliente">
     </div>
 
     <div class="mb-4 col-12 col-lg-6">
@@ -100,6 +85,11 @@
     <div class="mb-4 col-12 col-lg-6">
         <label for="pais" class="small">País*</label>
         <input class="form-control" value="<?= $endereco->pais; ?>" type="text" required name="pais" id="pais">
+    </div>
+
+    <div class="mb-4 col-12 col-lg-6">
+        <label for="maps" class="small">Iframe Maps*</label>
+        <input class="form-control" value="<?= $endereco->maps; ?>" type="text" required name="maps" id="maps">
     </div>
 
     <div class="mb-4 col-12 col-lg-6">

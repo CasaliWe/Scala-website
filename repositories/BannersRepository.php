@@ -35,4 +35,24 @@ class BannersRepository {
             return false; 
         }
     }
+
+    // atualizando title
+    public static function updateTitle($ref, $title) {
+        try {
+            $update = Banners::where('idbanners', '1')->update([
+                $ref => $title
+            ]);
+
+            if($update) {
+                Logger::log("Título atualizado!", "INFO");
+                return true; 
+            } else {
+                Logger::log("Erro ao atualizar o título. Nenhuma alteração feita.", "ERROR");
+                return false; 
+            }
+        } catch (\Exception $e) {
+            Logger::log("Erro ao atualizar o título: " . $e->getMessage(), "ERROR");
+            return false; 
+        }
+    }
 }

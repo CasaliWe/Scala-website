@@ -1,0 +1,1 @@
+[2025-08-15 20:23:59] [ERROR]: Erro ao atualizar os contatos: SQLSTATE[HY000]: General error: 1 no such column: facebook (SQL: update "contatos" set "instagram" = URL Instagram, "facebook" = ?, "linkedin" = URL LinkedIn, "area_cliente" = Link Área cliente, "email" = emailsite@gmail.com, "telefone" = (00) 00000-0000, "wpp" = (99) 99999-9999 where "idcontatos" = 1)

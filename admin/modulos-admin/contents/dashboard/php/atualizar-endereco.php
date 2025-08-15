@@ -9,6 +9,7 @@ $cidade = $_POST['cidade'];
 $estado = $_POST['estado'];
 $cep = $_POST['cep'];
 $pais = $_POST['pais'];
+$maps = $_POST['maps'];
 $link_maps = $_POST['link-maps'];
 
 $data = [
@@ -18,6 +19,7 @@ $data = [
     'estado' => $estado,
     'cep' => $cep,
     'pais' => $pais,
+    'maps' => $maps,
     'link_maps' => $link_maps
 ];
 

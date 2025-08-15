@@ -8,11 +8,8 @@ class Contatos extends Model {
     protected $table = 'contatos';
     protected $fillable = [
         'instagram',
-        '_instagram',
-        'facebook',
-        '_facebook',
         'linkedin',
-        '_linkedin',
+        'area_cliente',
         'email',
         'telefone',
         'wpp'

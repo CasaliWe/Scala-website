@@ -6,6 +6,8 @@ class RoutesAdmin {
     private static $routes = [
         '/admin/dashboard'   => 'Contatos | Endereço',
         '/admin/banners'     => 'Banners',
+        '/admin/solucoes'     => 'Soluções',
+        '/admin/textos-empresa'     => 'Textos página Empresa',
         '/admin/'            => 'Login'
     ];
 
