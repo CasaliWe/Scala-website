@@ -2,8 +2,20 @@
     include_once __DIR__ . '/config/config.php';
 
     // *** buscar dados
-    // use Repositories\ExemploRepository;
-    // $Exemplo = ExemploRepository::getAll();
+    use Repositories\ContatosRepository;
+    $contatos = ContatosRepository::getContatos();
+
+    // *** buscar serviços
+    use Repositories\ServicosRepository;
+    $servicos = ServicosRepository::getAll();
+
+    // *** buscar banners
+    use Repositories\BannersRepository;
+    $banners = BannersRepository::getAll();
+
+    // *** buscar texto
+    use Repositories\TextosEmpresaRepository;
+    $textos = TextosEmpresaRepository::getAll();
 ?>
 
 <!DOCTYPE html>

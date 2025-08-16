@@ -51,7 +51,7 @@
                 <div class="rounded border-site py-4 text-center">
                     <img src='<?= $base_url ?>assets/imagens/site/missao.png'>
                     <h5 class="text-0 fw-bold mt-3 mb-4">Missão</h5>
-                    <p class="text-missao text-0 px-4">Viabilizar acesso ao capital por meio de soluções de securitização estruturadas com ética, inovação e segurança.</p>
+                    <p class="text-missao text-0 px-4"><?= $textos['missao']; ?></p>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
                 <div class="rounded border-site py-4 text-center">
                     <img src='<?= $base_url ?>assets/imagens/site/visao.png'>
                     <h5 class="text-0 fw-bold mt-3 mb-4">Visão</h5>
-                    <p class="text-missao text-0 px-4">Ser referência nacional em soluções de securitização, contribuindo para o desenvolvimento sustentável do mercado financeiro.</p>
+                    <p class="text-missao text-0 px-4"><?= $textos['visao']; ?></p>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                 <div class="rounded border-site py-4 text-center">
                     <img src='<?= $base_url ?>assets/imagens/site/valores.png'>
                     <h5 class="text-0 fw-bold mt-3 mb-4">Valores</h5>
-                    <p class="text-missao text-0 px-4">Transparência ,Comprometimento, Integridade, Inovação, Solidez e Foco no cliente.</p>
+                    <p class="text-missao text-0 px-4"><?= $textos['valores']; ?></p>
                 </div>
             </div>
 
@@ -75,7 +75,7 @@
                 <div class="rounded border-site py-4 text-center">
                     <img src='<?= $base_url ?>assets/imagens/site/compromisso.png'>
                     <h5 class="text-0 fw-bold mt-3 mb-4">Compromisso</h5>
-                    <p class="text-missao text-0 px-4">Atuar com responsabilidade em cada operação, promovendo confiança mútua com clientes, parceiros e investidores.</p>
+                    <p class="text-missao text-0 px-4"><?= $textos['compromisso']; ?></p>
                 </div>
             </div>
 

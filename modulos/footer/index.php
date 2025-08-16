@@ -4,8 +4,8 @@
             <div class="mb-5 mb-lg-0 col-12 col-lg-6 text-center text-lg-start">
                 <img style="width: 220px;" src='<?= $base_url ?>assets/imagens/site/logo-footer.png'>
                 <div class="mt-4 d-flex justify-content-center justify-content-lg-start">
-                    <a href="" target="_blank" class="me-3"><img style="width: 35px;" src='<?= $base_url ?>assets/imagens/site/instagram.png'></a>
-                    <a href="" target="_blank"><img style="width: 35px;" src='<?= $base_url ?>assets/imagens/site/linkedin.png'></a>
+                    <a href="<?= $contatos['instagram']; ?>" target="_blank" class="me-3"><img style="width: 35px;" src='<?= $base_url ?>assets/imagens/site/instagram.png'></a>
+                    <a href="<?= $contatos['linkedin']; ?>" target="_blank"><img style="width: 35px;" src='<?= $base_url ?>assets/imagens/site/linkedin.png'></a>
                 </div>
             </div>
             <div class="mb-5 mb-lg-0 col-12 col-lg-2 d-flex flex-column text-center text-lg-start">
@@ -18,13 +18,15 @@
             <div class="mb-5 mb-lg-0 col-12 col-lg-2 d-flex flex-column text-center text-lg-start">
                 <h4 class="mb-4 text-white fw-semibold">Serviços</h4>
 
-                <a class="mb-3 text-white" href="<?= $base_url; ?>servico.php">Para sua empresa</a>
+                <?php foreach ($servicos as $key => $servico) { ?>
+                    <a class="mb-3 text-white" href="<?= $base_url; ?>servico.php?id=<?= $servico['id']; ?>"><?= $servico['titulo']; ?></a>
+                <?php } ?>
             </div>
             <div class="mb-5 mb-lg-0 col-12 col-lg-2 d-flex flex-column text-center text-lg-start">
                 <h4 class="mb-4 text-white fw-semibold">Fale Conosco</h4>
 
-                <a class="mb-3 text-white" href="">(54) 9 9153-8488</a>
-                <a class="mb-3 text-white" href="">email@gmail.com</a>
+                <a class="mb-3 text-white" href=""><?= $contatos['telefone']; ?></a>
+                <a class="mb-3 text-white" href=""><?= $contatos['email']; ?></a>
             </div>
         </div>
 

@@ -49,7 +49,7 @@
                         <div class="container-solucao text-center px-3">
                             <div class="px-5"><img class="w-75" src='<?= $base_url ?>assets/imagens/site/solucoes-1.png'></div>
                             <h4 class="fw-semibold mb-4 mt-3 text-white">A Scala é</h4>
-                            <p class="text-white">Especialista em securitização e estruturação de soluções financeiras sob medida.</p>
+                            <p class="text-white"><?= $solucoes['scala_e']; ?></p>
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@
                         <div class="container-solucao text-center px-3">
                             <div class="px-5"><img class="w-75" src='<?= $base_url ?>assets/imagens/site/solucoes-2.png'></div>
                             <h4 class="fw-semibold mb-4 mt-3 text-white">A Scala faz</h4>
-                            <p class="text-white">Transformamos ativos em oportunidades por meio de processos sólidos e seguros.</p>
+                            <p class="text-white"><?= $solucoes['scala_faz']; ?></p>
                         </div>
                     </div>
 
@@ -65,7 +65,7 @@
                         <div class="container-solucao text-center px-3">
                             <div class="px-5"><img class="w-75" src='<?= $base_url ?>assets/imagens/site/solucoes-3.png'></div>
                             <h4 class="fw-semibold mb-4 mt-3 text-white">Para quem</h4>
-                            <p class="text-white">Empresas, investidores e originadores que buscam eficiência e crescimento.</p>
+                            <p class="text-white"><?= $solucoes['quem_e_scala']; ?></p>
                         </div>
                     </div>
 
@@ -73,7 +73,7 @@
                         <div class="container-solucao text-center px-3">
                             <div class="px-5"><img class="w-75" src='<?= $base_url ?>assets/imagens/site/solucoes-4.png'></div>
                             <h4 class="fw-semibold mb-4 mt-3 text-white">Onde estamos</h4>
-                            <p class="text-white">Atuação nacional com presença estratégica nos principais centros financeiros.</p>
+                            <p class="text-white"><?= $solucoes['scala_onde']; ?></p>
                         </div>
                     </div>
 

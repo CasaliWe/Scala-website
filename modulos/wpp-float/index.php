@@ -35,6 +35,6 @@
 
 
 <div id="wpp-float">
-    <a href="#" target="_blank"><img src='<?= $base_url ?>assets/imagens/site/wpp-float.png'></a>
+    <a href="https://wa.me/<?= preg_replace("/[^0-9]/", "", $contatos['wpp']); ?>" target="_blank"><img src='<?= $base_url ?>assets/imagens/site/wpp-float.png'></a>
 </div>
 

@@ -26,7 +26,9 @@
                 Serviços
             </a>
             <div class="dropdown-menu-mobile">
-                <a href="<?= $base_url; ?>servico.php?id=1" style="color: white !important;" class="fs-4 text-1 mb-3 d-block">Para sua empresa</a>
+                <?php foreach ($servicos as $key => $servico) { ?>
+                    <a href="<?= $base_url; ?>servico.php?id=<?= $servico['id']; ?>" style="color: white !important;" class="fs-4 text-1 mb-3 d-block"><?= $servico['titulo']; ?></a>
+                <?php } ?>
             </div>
         </div>
         <a href="<?= $base_url; ?>contato.php" class="<?= \Core\RoutesSite::isActive('/contato.php') ? 'active-link' : '' ?> mb-5 fs-3 text-white">Contato</a>
@@ -34,7 +36,7 @@
     
     <div class="bg-1 py-4 w-100 px-4 d-flex align-items-center justify-content-between">
         <a href="<?= $base_url; ?>fale-conosco.php" class="bg-white text-dark py-2 px-4 rounded">Fale Conosco</a>
-        <a href="#" class="bg-0 text-1 py-2 px-4 rounded">Área do cliente</a>
+        <a href="<?= $contatos['area_cliente']; ?>" class="bg-0 text-1 py-2 px-4 rounded">Área do cliente</a>
     </div>
     <!-- navegação mob -->
 
@@ -62,14 +64,16 @@
                         Serviços
                     </a>
                     <div class="dropdown-menu bg-0">
-                        <a href="<?= $base_url; ?>servico.php?id=1" class="dropdown-item">Para sua empresa</a>
+                        <?php foreach ($servicos as $key => $servico) { ?>
+                            <a href="<?= $base_url; ?>servico.php?id=<?= $servico['id']; ?>" class="dropdown-item"><?= $servico['titulo']; ?></a>
+                        <?php } ?>
                     </div>
                 </div>
                 <a href="<?= $base_url; ?>contato.php" class="<?= \Core\RoutesSite::isActive('/contato.php') ? 'active-link' : '' ?> font-link-nav text-white">Contato</a>
             </nav>
             <div class="d-flex">
                 <a href="<?= $base_url; ?>fale-conosco.php" class="font-link-nav-btn me-3 bg-white text-dark py-2 px-4 rounded">Fale Conosco</a>
-                <a href="#" class="font-link-nav-btn bg-1 text-0 py-2 px-4 rounded">Área do cliente</a>
+                <a href="<?= $contatos['area_cliente']; ?>" class="font-link-nav-btn bg-1 text-0 py-2 px-4 rounded">Área do cliente</a>
             </div>
         </div>
         <!-- nav desktop -->
