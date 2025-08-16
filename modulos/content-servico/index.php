@@ -14,7 +14,7 @@
     <div class="px-4 px-lg-0 container mx-auto py-5">
 
         <div class="text-0 text-center">
-            <?= $servico['conteudo']; ?>
+            <?= $servico_selecionado['conteudo']; ?>
         </div>
 
     </div>

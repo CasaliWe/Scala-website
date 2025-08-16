@@ -1,6 +1,6 @@
 <style>
     #banner-servico{
-       background-image: url('<?= $base_url ?>admin/assets/imagens/arquivos/servicos/<?= $servico['banner'] ?>');
+       background-image: url('<?= $base_url ?>admin/assets/imagens/arquivos/servicos/<?= $servico_selecionado['banner'] ?>');
        background-size: cover;
        background-position: center;
        background-repeat: no-repeat;
@@ -26,7 +26,7 @@
     
     @media(max-width:992px) {
         #banner-servico{
-            background-image: url('<?= $base_url ?>admin/assets/imagens/arquivos/servicos/<?= $servico['banner'] ?>');
+            background-image: url('<?= $base_url ?>admin/assets/imagens/arquivos/servicos/<?= $servico_selecionado['banner'] ?>');
             height: 90vh;
         }
 
@@ -41,7 +41,7 @@
 
 <section id="banner-servico" class="d-flex align-items-end align-items-lg-center justify-content-center">
     <div class="container mx-auto px-4 px-lg-0 mb-5 mb-lg-0 pb-4 pb-lg-0">
-        <h1 <?= $anima_scroll; ?> class="mb-3 mb-lg-4 text-white" id="title-banner-servico"><?= $servico['title_banner'] ?></h1>
+        <h1 <?= $anima_scroll; ?> class="mb-3 mb-lg-4 text-white" id="title-banner-servico"><?= $servico_selecionado['title_banner'] ?></h1>
     </div>
 </section>
 

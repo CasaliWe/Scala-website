@@ -15,8 +15,8 @@
 
     $id_servico = $_GET['id'] ?? null;
     if ($id_servico) {
-        $servico = ServicosRepository::getOne($id_servico);
-        if (!$servico) {
+        $servico_selecionado = ServicosRepository::getOne($id_servico);
+        if (!$servico_selecionado) {
             header('Location: ' . $base_url . 'index.php');
             exit;
         }
