@@ -46,5 +46,8 @@
     <!-- GLOBAL CSS -->
     <link rel="stylesheet" href="<?= $base_url; ?>assets/css/style.css">
 
+    <!-- LOADING -->
+    <link rel="stylesheet" href="<?= $base_url; ?>assets/js/loading.js">
+
 
     <title><?= \Core\RoutesSite::getPageTitle(); ?></title>

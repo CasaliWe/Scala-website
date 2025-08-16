@@ -23,6 +23,14 @@
 </head>
 <body>
 
+    <!-- AVISO COOKIES -->
+    <?php include_once  __DIR__ .'/modulos/aviso-cookies/index.php'; ?>
+    <!-- AVISO COOKIES -->
+     
+    <!-- LOADING -->
+    <?php include_once  __DIR__ .'/modulos/loading/index.php'; ?>
+    <!-- LOADING -->
+
     <!-- WPP FLOAT -->
     <?php include_once  __DIR__ .'/modulos/wpp-float/index.php'; ?>
     <!-- WPP FLOAT -->
@@ -57,9 +65,6 @@
 
     <!-- BOOTSTRAP -->
     <script src="<?= $base_url; ?>assets/utils/bootstrap/bootstrap.js"></script>
-
-    <!-- LOADING JS -->
-    <script src="<?= $base_url; ?>assets/js/loading.js"></script>
 
     <!-- FANCYBOX JS -->
     <script src="<?= $base_url; ?>assets/utils/fancybox/fancybox-1.js"></script>

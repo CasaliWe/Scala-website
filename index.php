@@ -27,6 +27,10 @@
 </head>
 <body>
 
+    <!-- AVISO COOKIES -->
+    <?php include_once  __DIR__ .'/modulos/aviso-cookies/index.php'; ?>
+    <!-- AVISO COOKIES -->
+
     <!-- WPP FLOAT -->
     <?php include_once  __DIR__ .'/modulos/wpp-float/index.php'; ?>
     <!-- WPP FLOAT -->

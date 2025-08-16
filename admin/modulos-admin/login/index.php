@@ -54,7 +54,7 @@
     <form onsubmit="loading()" action="<?= $base_url; ?>modulos-admin/login/php/logar.php" method="post" id="container-content" class="border-login">
         <img src="<?php echo $base_url ?>assets/imagens/site-admin/logo-login.png" id="logo-login">
         <p class="mb-4">PAINEL ADMIN</p>
-        <input type="text" required class="w-75 mb-2 form-control text-center" placeholder="Login" name="login">
+        <input type="text" required class="w-75 mb-2 form-control text-center" placeholder="Login" name="login" autofocus>
         <input type="password" required class="w-75 mb-2 form-control text-center" placeholder="Senha" name="senha">
         <button type="submit" class="btn btn-principal">ENTRAR</button>
 

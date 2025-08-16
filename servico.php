@@ -12,6 +12,18 @@
     // *** buscar banners
     use Repositories\BannersRepository;
     $banners = BannersRepository::getAll();
+
+    $id_servico = $_GET['id'] ?? null;
+    if ($id_servico) {
+        $servico = ServicosRepository::getOne($id_servico);
+        if (!$servico) {
+            header('Location: ' . $base_url . 'index.php');
+            exit;
+        }
+    } else {
+        header('Location: ' . $base_url . 'index.php');
+        exit;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +35,10 @@
 </head>
 <body>
 
+    <!-- AVISO COOKIES -->
+    <?php include_once  __DIR__ .'/modulos/aviso-cookies/index.php'; ?>
+    <!-- AVISO COOKIES -->
+     
     <!-- WPP FLOAT -->
     <?php include_once  __DIR__ .'/modulos/wpp-float/index.php'; ?>
     <!-- WPP FLOAT -->
