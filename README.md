@@ -1,6 +1,6 @@
 # 🌐 Scala — Website
 
-![Visualização do Site](./bjj.gif)
+![Visualização do Site](./scala.gif)
 
 ## 🧠 Sobre o Projeto
 
